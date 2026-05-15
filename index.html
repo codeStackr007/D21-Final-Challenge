@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Responsive hero + features layout. Mobile-first, BEM, Flexbox."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Mobile First, BEM, Responsive Design"
+    />
+    <meta name="author" content="John Prosper" />
+
+    <title>Day 21 | Final Challenge</title>
+
+    <!-- Google Fonts: Oswald (Bold headings) + Montserrat (Regular body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="nav">
+        <!-- Mobile menu button -->
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <i class="fa-solid fa-bars icon-bars"></i>
+          <i class="fa-solid fa-xmark icon-close"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="/" class="nav__logo">
+          <img src="img/logo.svg" alt="Conquering Responsive Layouts" />
+        </a>
+
+        <div class="nav__placeholder"></div>
+
+        <!-- Navigation Menu -->
+        <div class="nav__menu">
+          <ul class="nav__list nav__list--main">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+
+          <ul class="nav__list nav__list--auth">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Sign In</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--button">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Responsive layouts
+            <span class="hero__title-accent">don't have to be a struggle.</span>
+          </h1>
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__description">
+            Learn solid responsive patterns, craft small grid modules that adapt
+            fast and apply clean, reusable rules to every layout.
+          </p>
+          <a href="#" class="hero__cta">I want to learn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="container features__container">
+        <!-- Column 1 -->
+        <article class="feature-card">
+          <h2 class="feature-card__title">Mobile-first</h2>
+          <p class="feature-card__description">
+            Design for small screens first, prefer scale, tight spacing and
+            fluid grids that adapt across breakpoints with sensible gutter rules
+            for every device.
+          </p>
+        </article>
+
+        <!-- Column 2 -->
+        <article class="feature-card">
+          <h2 class="feature-card__title">Efficient</h2>
+          <p class="feature-card__description">
+            Keep clean styles daily, eliminate repetition, minify selectors, and
+            share tokens so builds stay fast and styles remain small for users
+            in production.
+          </p>
+        </article>
+
+        <!-- Column 3 -->
+        <article class="feature-card">
+          <h2 class="feature-card__title">Done right</h2>
+          <p class="feature-card__description">
+            Align blocks, reduce nesting levels, use semantic markup, limit
+            specificity, favor clear gaps and consistent type scales, test
+            layouts and ship a stable UI.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="workflow">
+      <div class="container workflow__container">
+        <div class="workflow__layout">
+          <!-- LEFT COLUMN: MAIN CONTENT -->
+          <main class="workflow__main">
+            <h2 class="workflow__title">It doesn’t have to be so hard</h2>
+
+            <p class="workflow__text">
+              Build clear style even, helpsite improving work, but to perform
+              growth including in create as robust great things. At case as
+              great layout. Build clear style even, helpsite improving work, but
+              to perform growth including in create as robust great things. At
+              case as great layout.
+            </p>
+
+            <div class="workflow__graphic-wrap">
+              <img
+                src="img/the-image.jpg"
+                alt="Hand-drawn UI wireframe sketches showing responsive layout variations"
+                class="workflow__graphic"
+              />
+            </div>
+
+            <p class="workflow__text">
+              Start fresh tools daily, designer producing code, now so update
+              pixels featuring on device so modern sleek light. In area so tight
+              design. Start fresh tools daily, designer producing code, now so
+              update pixels featuring on device so modern sleek light. In area
+              so tight design.
+            </p>
+          </main>
+
+          <!-- RIGHT COLUMN: SIDEBAR STEPS -->
+          <aside class="workflow__sidebar">
+            <!-- Step 1 -->
+            <article class="step-card">
+              <h3 class="step-card__title">Break it down</h3>
+              <p class="step-card__description">
+                Build clear style even helps, professional developing apps, and
+                to produce modern components so create as robust great things.
+              </p>
+            </article>
+
+            <!-- Step 2 -->
+            <article class="step-card">
+              <h3 class="step-card__title">Work your way up</h3>
+              <p class="step-card__description">
+                Draft fresh looks after start, synchronized functional webs, now
+                in improve faster interfaces to design is smooth sleek builds.
+              </p>
+            </article>
+
+            <!-- Step 3 -->
+            <article class="step-card">
+              <h3 class="step-card__title">Ship Fast</h3>
+              <p class="step-card__description">
+                Think about depth while coded, standardized structured bits, use
+                as dynamic better blueprints on output an expert final result.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <h2 class="footer__title">Just scratching the surface</h2>
+
+        <div class="footer__layout">
+          <!-- Column 1: About -->
+          <div class="footer__column">
+            <h3 class="footer__column-title">About our company</h3>
+            <p class="footer__text">
+              We teach interface design principles, helping you build fast
+              layout grids, mastering responsive style sheets completely. No
+              more buggy pages.
+            </p>
+          </div>
+
+          <!-- Column 2: Links -->
+          <div class="footer__column">
+            <h3 class="footer__column-title">Getting around</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Topics -->
+          <div class="footer__column">
+            <h3 class="footer__column-title">Other things</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Flexbox bugs</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Grid</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Media rules</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Architecture</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Extra Links -->
+          <div class="footer__column">
+            <h3 class="footer__column-title">And more</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Code review</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Styles</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Design tools</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Accessibility</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
