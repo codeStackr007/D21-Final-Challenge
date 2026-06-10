@@ -39,7 +39,7 @@ html {
   --fs-heading-md: 1.875rem;
   --fs-heading-lg: 3.5rem;
   --fs-heading-xl: 4.375rem;
-  --fs-heading-xxl: 5.625rem;
+  --fs-heading-xxl: 5.6rem;
 
   /* Line Heights */
   --lh-body: 1.6;
@@ -629,7 +629,7 @@ header {
 
   .hero {
     min-height: 660px;
-    padding: 10rem 0;
+    padding: 12rem 0;
   }
 
   .hero__container {
