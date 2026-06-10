@@ -747,6 +747,7 @@ header {
   .footer__title {
     font-size: var(--fs-heading-xl);
     margin-bottom: 4rem;
+    text-align: center;
   }
 
   .footer__text {
