@@ -1,5 +1,6 @@
 const navHamToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
+const navLinks = document.querySelectorAll(".nav__link");
 
 // Helper Function
 const closeNav = () => nav.classList.remove("nav-is-open");
@@ -32,3 +33,9 @@ window.addEventListener("click", (e) => {
     closeNav();
   }
 });
+
+for (i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", () => {
+    closeNav();
+  });
+}
